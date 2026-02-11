@@ -1,24 +1,63 @@
-# Backend
-backend/__pycache__/
-backend/*.pyc
-backend/venv/
-backend/coderefine.db
-backend/.env
-backend/.python-version
+# Create .gitignore file
+cat > .gitignore << 'EOF'
+# Environment variables and secrets
+.env
+.env.local
+.env.*
+config/secrets.yml
+config/application.yml
+config/credentials.yml.enc
+config/master.key
+*.key
+*.pem
+*.pfx
+*.keystore
+secrets.yml
 
-# Frontend
-frontend/node_modules/
-frontend/.env
-frontend/build/
-frontend/.cache
-frontend/package-lock.json
+# API keys and tokens
+*apikey*
+*api_key*
+*secret*
+*token*
+*password*
+*credential*
 
-# IDE
+# IDE files
 .vscode/
 .idea/
-*.swp
 *.swo
+*.swp
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Dependencies
+node_modules/
+vendor/
+package-lock.json
+
+# Build and logs
+dist/
+build/
+*.log
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env/
+.venv/
+*.egg-info/
+
+# Node
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Local env file
+.env.example
+EOF
