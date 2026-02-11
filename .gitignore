@@ -89,4 +89,8 @@ config/credentials.yml.enc
 # Logs
 *.log
 logs/
-EOF
+EOF"venv/" 
+".venv/" 
+"backend/venv/" 
+"__pycache__/" 
+"*.pyc" 
